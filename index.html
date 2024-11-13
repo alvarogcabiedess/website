@@ -1,1 +1,33 @@
-Hola
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra lateral constante -->
+    <div class="sidebar">
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#" onclick="showTab('home')">Home</a></li>
+            <li><a href="#" onclick="showTab('projects')">Projects</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenido de las pestañas -->
+    <div class="content">
+        <div id="home" class="tab-content">
+            <h1>Home</h1>
+            <p>Bienvenido a la página de inicio.</p>
+        </div>
+        <div id="projects" class="tab-content" style="display: none;">
+            <h1>Projects</h1>
+            <p>Estos son algunos proyectos interesantes.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
