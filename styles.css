@@ -1,4 +1,6 @@
 body {
+    align-items: center;
+    justify-content: center;
     font-family: Arial, sans-serif;
     margin: 0;
     display: flex;
@@ -7,7 +9,7 @@ body {
 /* Barra lateral */
 .sidebar {
     width: 200px;
-    background-color: #5DE2E7;
+    background-color: #26979B;
     color: #fff;
     padding: 20px;
     position: fixed;
@@ -39,6 +41,8 @@ body {
 
 /* Contenido principal */
 .content {
+    align-items: center;
+    justify-content: center;
     margin-left: 220px;
     padding: 20px;
     width: calc(100% - 220px);
