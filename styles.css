@@ -5,40 +5,68 @@ body {
     margin: 0;
     display: flex;
 }
-
-/* Barra lateral */
-.sidebar {
-    width: 200px;
-    background-color: #26979B;
-    color: #fff;
+/* Estilos generales (para PC) */
+header {
+    background-color: #4CAF50;
+    color: white;
     padding: 20px;
-    position: fixed;
-    height: 100vh;
+    text-align: center;
 }
 
-.sidebar h2 {
+.container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.item {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+}
+
+.box {
+    width: 30%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
     text-align: center;
     font-size: 24px;
+    z-index: 1000; /* Asegura que la barra quede sobre otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para la barra */
+    felx-direction: column;
 }
 
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Cambia el estilo del header en móvil */
+    header {
+        padding: 10px;
+        font-size: 18px;
+    }
 
-.sidebar ul li {
-    margin: 20px 0;
-}
+    /* Pasa las cajas a un diseño en columna */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.sidebar ul li a {
-    color: #fff;
-    text-decoration: none;
+    .box {
+        width: 80%; /* Ajusta el ancho para pantallas pequeñas */
+        margin-bottom: 10px;
+    }
 }
-
-.sidebar ul li a:hover {
-    color: #ddd;
-}
-
 /* Contenido principal */
 .content {
     align-items: center;
