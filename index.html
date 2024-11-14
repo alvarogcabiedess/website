@@ -24,6 +24,14 @@
             margin: 20px;
         }
 
+        .item {
+            margin-left: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 4px;
+        }
+
         .box {
             width: 30%;
             padding: 20px;
@@ -69,8 +77,12 @@
     <div class=navbar>
         <h1>Bienvenido a mi web derecha</h1>
         <div class="container">
-            <a href="#" onclick="showTab('home')">Home</a>
-            <a href="#" onclick="showTab('projects')">Projects</a>
+            <div class="item">
+                <a href="#" onclick="showTab('home')">Home</a>
+            </div>
+            <div class="item">
+                <a href="#" onclick="showTab('projects')">Projects</a>
+            </div>
         </div>
     </div>
 </head>
