@@ -42,6 +42,7 @@
             font-size: 24px;
             z-index: 1000; /* Asegura que la barra quede sobre otros elementos */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para la barra */
+            felx-direction: column;
         }
 
         /* Media Query para dispositivos móviles */
@@ -67,25 +68,22 @@
 
     <div class=navbar>
         <h1>Bienvenido a mi web</h1>
+        <div>
+            <a href="#" onclick="showTab('home')">Home</a>
+            <a href="#" onclick="showTab('projects')">Projects</a>
+        </div>
     </div>
 </head>
 <body>
-    <!-- Barra lateral constante -->
-    <div class="sidebar">
-        <h2>Índice</h2>
-        <ul>
-            <li><a href="#" onclick="showTab('home')">Home</a></li>
-            <li><a href="#" onclick="showTab('projects')">Projects</a></li>
-        </ul>
-    </div>
+
 
     <!-- Contenido de las pestañas -->
     <div class="content">
-        <img src=logo.png alt="Firma prsonal" width="40"></img>
+        <img src=logo.png alt="Firma personal" width="40"></img>
         Hola content
         <div id="home" class="tab-content">
             <h1>Home</h1>
-            <p>Bienvenido a la página de inicio.</p>
+            <p>Bienvenido a la página de home.</p>
         </div>
         <div id="projects" class="tab-content" style="display: none;">
             <h1>Projects</h1>
