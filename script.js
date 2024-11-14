@@ -8,8 +8,4 @@ function showTab(tabId) {
     // Mostrar el contenido de la pestaña seleccionada
     const selectedTab = document.getElementById(tabId);
     selectedTab.style.display = 'block';
-
-    document.addEventListener("DOMContentLoaded", function() {
-        showTab('home');
-    });
 }
