@@ -1,3 +1,12 @@
+/* Estilos generales (para PC) */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    padding-top: 80px;
+}
+
 body {
     align-items: center;
     justify-content: center;
@@ -6,13 +15,6 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 80px;
-}
-/* Estilos generales (para PC) */
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
 }
 
 .container {
