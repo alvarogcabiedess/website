@@ -19,6 +19,13 @@ header {
     margin: 20px;
 }
 
+.containerf-t {
+    display: flex;
+    width: 90%;
+    padding: 30px;
+    flex-direction: row;    
+}
+
 .item {
     margin-left: 10px;
     padding: 10px;
@@ -45,8 +52,10 @@ header {
     font-size: 24px;
     z-index: 1000; /* Asegura que la barra quede sobre otros elementos */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para la barra */
-    felx-direction: column;
+    flex-direction: column;
 }
+
+
 
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
