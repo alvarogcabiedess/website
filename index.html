@@ -5,6 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos generales (para PC) */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .box {
+            width: 30%;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 24px;
+            z-index: 1000; /* Asegura que la barra quede sobre otros elementos */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para la barra */
+        }
+
+        /* Media Query para dispositivos móviles */
+        @media (max-width: 768px) {
+            /* Cambia el estilo del header en móvil */
+            header {
+                padding: 10px;
+                font-size: 18px;
+            }
+
+            /* Pasa las cajas a un diseño en columna */
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box {
+                width: 80%; /* Ajusta el ancho para pantallas pequeñas */
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+
+    <div class=navbar>
+        <h1>Bienvenido a mi web</h1>
+    </div>
 </head>
 <body>
     <!-- Barra lateral constante -->
@@ -16,15 +79,10 @@
         </ul>
     </div>
 
-    <div class="content">
-        <img src=logo.png alt="Firma prsonal" width="40"></img>
-        <h3>
-            Esto se muestra en la página principal
-        </h3>
-    </div>
-
     <!-- Contenido de las pestañas -->
     <div class="content">
+        <img src=logo.png alt="Firma prsonal" width="40"></img>
+        Hola content
         <div id="home" class="tab-content">
             <h1>Home</h1>
             <p>Bienvenido a la página de inicio.</p>
