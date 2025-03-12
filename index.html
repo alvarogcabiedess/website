@@ -3,65 +3,160 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mi Página</title>
-        <link rel="stylesheet" href="styles.css">
-        
-        <div class=navbar>
-            <h1>Bienvenido a mi web biográfica</h1>
-            <div class="container">
-                <div class="item">
-                    <a href="#" onclick="showTab('home')">Home</a>
-                </div>
-                <div class="item">
-                    <a href="#" onclick="showTab('curriculum')">Curriculum</a>
-                </div>
-                <div class="item">
-                    <a href="#" onclick="showTab('projects')">Projects</a>
-                </div>
-            </div>
-        </div>
+        <title>Currículum de Ingeniero Informático</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                width: 80%;
+                margin: auto;
+                overflow: hidden;
+            }
+            header {
+                background: #333;
+                color: #fff;
+                padding-top: 30px;
+                min-height: 70px;
+                border-bottom: #77aaff 3px solid;
+            }
+            header a {
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+            header ul {
+                padding: 0;
+                list-style: none;
+            }
+            header li {
+                float: left;
+                display: inline;
+                padding: 0 20px 0 20px;
+            }
+            header #branding {
+                float: left;
+            }
+            header #branding h1 {
+                margin: 0;
+            }
+            header nav {
+                float: right;
+                margin-top: 10px;
+            }
+            #showcase {
+                min-height: 400px;
+                background: url('showcase.jpg') no-repeat 0 -400px;
+                text-align: center;
+                color: #fff;
+            }
+            #showcase h1 {
+                margin-top: 100px;
+                font-size: 55px;
+                margin-bottom: 10px;
+            }
+            #showcase p {
+                font-size: 20px;
+            }
+            #projects {
+                margin: 20px 0;
+            }
+            .project {
+                background: #fff;
+                padding: 20px;
+                margin: 20px 0;
+                border: #ccc 1px solid;
+                border-radius: 5px;
+            }
+            .project h3 {
+                margin-top: 0;
+            }
+            .project a {
+                color: #333;
+                text-decoration: none;
+            }
+            .project a:hover {
+                color: #77aaff;
+            }
+            footer {
+                background: #333;
+                color: #fff;
+                text-align: center;
+                padding: 10px 0;
+                margin-top: 20px;
+            }
+        </style>
     </head>
-<body>
-    <!-- Contenido de las pestañas -->
-    <div class="content">
-        <div id="home" class=tab-content>
-            <div class="containerf-t">
-                <img src="https://ritsi.org/wp-content/uploads/2020/01/photo_2024-10-15_10-18-03-e1729586275330.jpg" width="35%>
-                <p>
-                    Me llamo Álvaro Gutiérrez de Cabiedes Gonzalvo. 
-    
-                    A día de hoy, tengo 20 años, estudio Ingeniería Informática en la Universidad Autónoma de Madrid y soy representante activo de la sectorial estatal de informática, RITSI.
-                </p>
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1>Currículum de Ingeniero Informático</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#about">Sobre mí</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-        <div id="curriculum" class="tab-content">
-            <h1>Home</h1>
-            <p>Bienvenido a la página de home.</p>
-            <p>Bienvenido a la página de home.</p>
-            <p>Bienvenido a la página de home.</p>
-            <p>Bienvenido a la página de home.</p>
-            <p>Bienvenido a la página de home.</p>
-            <p>Bienvenido a la página de home.</p>
-            <p>Bienvenido a la página de home.</p>
-        </div>
-        <div id="projects" class="tab-content" style="display: none;">
-            <h1>Projects</h1>
-            <p>Estos son algunos proyectos interesantes.</p>
-            <p>Estos son algunos proyectos interesantes.</p>
-            <p>Estos son algunos proyectos interesantes.</p>
-            <p>Estos son algunos proyectos interesantes.</p>
-            <p>Estos son algunos proyectos interesantes.</p>
-            <p>Estos son algunos proyectos interesantes.</p>
-            <p>Estos son algunos proyectos interesantes.</p>
-            <p>Estos son algunos proyectos interesantes.</p>
-            <p>Estos son algunos proyectos interesantes.</p>
-        </div>
-    </div>
+        </header>
 
-    <script src="script.js">
-        document.addEventListener("DOMContentLoaded", function() {
-            showTab('home');
-        });
-    </script>
-</body>
+        <section id="showcase">
+            <div class="container">
+                <h1>Bienvenido a mi currículum</h1>
+                <p>Ingeniero Informático con experiencia en desarrollo de software y gestión de proyectos.</p>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>Sobre mí</h2>
+            <p>Ingeniero Informático con más de 10 años de experiencia en el desarrollo de software, especializado en tecnologías web y gestión de proyectos. Apasionado por la tecnología y siempre en busca de nuevos retos.</p>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>Proyectos</h2>
+            <div class="project">
+                <h3>Proyecto 1</h3>
+                <p>Descripción breve del proyecto 1.</p>
+                <a href="https://github.com/usuario/proyecto1" target="_blank">Ver en GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2</h3>
+                <p>Descripción breve del proyecto 2.</p>
+                <a href="https://github.com/usuario/proyecto2" target="_blank">Ver en GitHub</a>
+            </div>
+            <!-- Añadir más proyectos según sea necesario -->
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contacto</h2>
+            <form action="mailto:tuemail@dominio.com" method="post" enctype="text/plain">
+                <div>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section></form></section>
+
+        <footer>
+            <p>Currículum de Ingeniero Informático &copy; 2023</p>
+        </footer>
+    </body>
 </html>
