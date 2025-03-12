@@ -1,162 +1,195 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Currículum de Ingeniero Informático</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f4f4f4;
-                margin: 0;
-                padding: 0;
-            }
-            .container {
-                width: 80%;
-                margin: auto;
-                overflow: hidden;
-            }
-            header {
-                background: #333;
-                color: #fff;
-                padding-top: 30px;
-                min-height: 70px;
-                border-bottom: #77aaff 3px solid;
-            }
-            header a {
-                color: #fff;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-size: 16px;
-            }
-            header ul {
-                padding: 0;
-                list-style: none;
-            }
-            header li {
-                float: left;
-                display: inline;
-                padding: 0 20px 0 20px;
-            }
-            header #branding {
-                float: left;
-            }
-            header #branding h1 {
-                margin: 0;
-            }
-            header nav {
-                float: right;
-                margin-top: 10px;
-            }
-            #showcase {
-                min-height: 400px;
-                background: url('showcase.jpg') no-repeat 0 -400px;
-                text-align: center;
-                color: #fff;
-            }
-            #showcase h1 {
-                margin-top: 100px;
-                font-size: 55px;
-                margin-bottom: 10px;
-            }
-            #showcase p {
-                font-size: 20px;
-            }
-            #projects {
-                margin: 20px 0;
-            }
-            .project {
-                background: #fff;
-                padding: 20px;
-                margin: 20px 0;
-                border: #ccc 1px solid;
-                border-radius: 5px;
-            }
-            .project h3 {
-                margin-top: 0;
-            }
-            .project a {
-                color: #333;
-                text-decoration: none;
-            }
-            .project a:hover {
-                color: #77aaff;
-            }
-            footer {
-                background: #333;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-                margin-top: 20px;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <div id="branding">
-                    <h1>Currículum de Ingeniero Informático</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#about">Sobre mí</a></li>
-                        <li><a href="#projects">Proyectos</a></li>
-                        <li><a href="#contact">Contacto</a></li>
-                    </ul>
-                </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum de Ingeniero Informático</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #eef2f3;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #1e3c72;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #77aaff;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        #showcase {
+            background: url('showcase.jpg') no-repeat center center/cover;
+            min-height: 400px;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #showcase h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #1e3c72;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .project a:hover {
+            background: #77aaff;
+        }
+        form div {
+            margin-bottom: 15px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #1e3c72;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #77aaff;
+        }
+        footer {
+            background: #1e3c72;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Currículum de Ingeniero Informático</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="showcase">
+        <h1>Bienvenido a mi currículum</h1>
+        <p>Desarrollador de software con experiencia en tecnologías web y gestión de proyectos.</p>
+    </section>
+
+    <section id="about" class="container card">
+        <h2>Sobre mí</h2>
+        <p>Ingeniero Informático con más de 10 años de experiencia en el desarrollo de software, apasionado por la tecnología y la innovación.</p>
+    </section>
+
+    <section id="skills" class="container card">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Desarrollo web (HTML, CSS, JavaScript, React, Angular)</li>
+            <li>Backend (Node.js, Python, Java, PHP)</li>
+            <li>Gestión de bases de datos (MySQL, PostgreSQL, MongoDB)</li>
+            <li>Arquitectura de software y diseño de sistemas</li>
+            <li>Trabajo en equipo y metodologías ágiles</li>
+        </ul>
+    </section>
+
+    <section id="experience" class="container card">
+        <h2>Experiencia</h2>
+        <p><strong>Desarrollador Full Stack</strong> - Empresa XYZ (2018 - Presente)</p>
+        <p>Desarrollo de aplicaciones web y gestión de bases de datos.</p>
+        <p><strong>Ingeniero de Software</strong> - Empresa ABC (2013 - 2018)</p>
+        <p>Diseño y desarrollo de sistemas escalables para grandes volúmenes de datos.</p>
+    </section>
+
+    <section id="projects" class="container card">
+        <h2>Proyectos</h2>
+        <div class="project">
+            <h3>Proyecto 1</h3>
+            <p>Descripción del proyecto.</p>
+            <a href="https://github.com/usuario/proyecto1" target="_blank">Ver en GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Proyecto 2</h3>
+            <p>Descripción del proyecto.</p>
+            <a href="https://github.com/usuario/proyecto2" target="_blank">Ver en GitHub</a>
+        </div>
+    </section>
+
+    <section id="contact" class="container card">
+        <h2>Contacto</h2>
+        <form action="mailto:tuemail@dominio.com" method="post" enctype="text/plain">
+            <div>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
             </div>
-        </header>
-
-        <section id="showcase">
-            <div class="container">
-                <h1>Bienvenido a mi currículum</h1>
-                <p>Ingeniero Informático con experiencia en desarrollo de software y gestión de proyectos.</p>
+            <div>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
             </div>
-        </section>
-
-        <section id="about" class="container">
-            <h2>Sobre mí</h2>
-            <p>Ingeniero Informático con más de 10 años de experiencia en el desarrollo de software, especializado en tecnologías web y gestión de proyectos. Apasionado por la tecnología y siempre en busca de nuevos retos.</p>
-        </section>
-
-        <section id="projects" class="container">
-            <h2>Proyectos</h2>
-            <div class="project">
-                <h3>Proyecto 1</h3>
-                <p>Descripción breve del proyecto 1.</p>
-                <a href="https://github.com/usuario/proyecto1" target="_blank">Ver en GitHub</a>
+            <div>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
             </div>
-            <div class="project">
-                <h3>Proyecto 2</h3>
-                <p>Descripción breve del proyecto 2.</p>
-                <a href="https://github.com/usuario/proyecto2" target="_blank">Ver en GitHub</a>
+            <div>
+                <button type="submit">Enviar</button>
             </div>
-            <!-- Añadir más proyectos según sea necesario -->
-        </section>
+        </form>
+    </section>
 
-        <section id="contact" class="container">
-            <h2>Contacto</h2>
-            <form action="mailto:tuemail@dominio.com" method="post" enctype="text/plain">
-                <div>
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div>
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <div>
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
-        </section></form></section>
-
-        <footer>
-            <p>Currículum de Ingeniero Informático &copy; 2023</p>
-        </footer>
-    </body>
+    <footer>
+        <p>&copy; 2025 Currículum de Ingeniero Informático</p>
+    </footer>
+</body>
 </html>
